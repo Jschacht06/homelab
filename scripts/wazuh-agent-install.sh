@@ -51,5 +51,9 @@ sed -i "s/^deb/#deb/" /etc/apt/sources.list.d/wazuh.list
 
 apt-get update
 
+echo "[+] Deleting script..."
+
+rm -- "$0"
+
 
 echo "[+] Done."
