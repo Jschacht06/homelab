@@ -47,7 +47,9 @@ systemctl start wazuh-agent
 
 echo "[+] Disabling automatic updates..."
 
-echo "wazuh-agent hold" | dpkg --set-selections
+sed -i "s/^deb/#deb/" /etc/apt/sources.list.d/wazuh.list
+
+apt-get update
 
 
 echo "[+] Done."
