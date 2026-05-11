@@ -31,7 +31,7 @@ apt-get update
 
 echo "[+] Installing the agent..."
 
-WAZUH_MANAGER="192.168.50.107" apt-get install -y wazuh-agent
+WAZUH_MANAGER="<manager-ip>" apt-get install -y wazuh-agent
 
 
 echo "[+] Enabling and Starting the agent..."
